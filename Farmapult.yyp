@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0d4eca56-15f0-4d26-b296-f6b5acca12ef",
+            "Value": {
+                "id": "755f6522-b2e6-4fad-8466-940809d5bf0c",
+                "resourcePath": "sprites\\sprFarmbackground\\sprFarmbackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0de589c5-a9f6-456a-ac26-cc075059e139",
             "Value": {
                 "id": "bf4ea351-95b5-442b-9fb0-2c5fb673b370",
@@ -63,6 +71,14 @@
             }
         },
         {
+            "Key": "522d788d-af65-4827-968e-15042c974721",
+            "Value": {
+                "id": "771dd982-7312-4620-93b0-df9db43dde21",
+                "resourcePath": "objects\\objWindmill\\objWindmill.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "610e91ad-25be-4e95-858c-b9e1037afa35",
             "Value": {
                 "id": "9d7013ae-c8df-48c0-9293-d252711454e2",
@@ -92,6 +108,14 @@
                 "id": "3c0a040b-c210-4b17-a245-9b13500be74e",
                 "resourcePath": "views\\91fbe170-b7f6-4655-9979-fbf585ef2f15.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9243ffa7-b8a3-4c3a-8633-0dff8a4d077f",
+            "Value": {
+                "id": "31e86877-3a70-45be-8e2c-af75abb6bb8f",
+                "resourcePath": "sprites\\sprWindmill\\sprWindmill.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
