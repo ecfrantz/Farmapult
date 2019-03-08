@@ -35,7 +35,7 @@ if(xvel <= 0){
 	xvel = 0;
 }
 
-if(xvel ==0 && yvel == 0){
+if(xvel == 0 && yvel == 0){
 	x = xStart;
 	y = belowGround;
 	launched = false;

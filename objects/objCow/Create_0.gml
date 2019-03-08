@@ -2,4 +2,4 @@
 // You can write your code in this editor
 event_inherited();
 thrusting = false;
-jetFuel = 500;
+jetFuel = 100;
