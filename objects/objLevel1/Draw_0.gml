@@ -23,6 +23,9 @@ for(var i=0;i<num_slotsx;i++){
 		
 		// draw the slots
 		draw_rectangle(x1,y1,x2,y2, true);
+		if(equipped == listId[i]){
+			global.inventory[i,j] = animalList.empty;	
+		}
 		
 		// draw animals into slots
 		if(global.inventory[i,j] != animalList.empty){
@@ -41,8 +44,19 @@ for(var i=0;i<num_slotsx;i++){
 		
 		// check if mouse hover into slots
 		if(mouse_x > x1 && mouse_x < x2 && mouse_y > y1 && mouse_y < y2){
-			draw_set_color(c_aqua);
-			draw_rectangle(x1,y1,x2,y2,true);
+			if(global.inventory[i,j] != animalList.empty){
+				draw_set_color(c_aqua);
+				draw_rectangle(x1,y1,x2,y2,true);
+			}
+		}
+		
+		// if mouse clicked
+		if(mouse_x > x1 && mouse_x < x2 && mouse_y > y1 && mouse_y < y2){
+			if(mouse_check_button(mb_left)){
+				equipped = listId[i];
+			} 
 		}
 	}
 }
+
+
