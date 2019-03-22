@@ -11,6 +11,9 @@ if(launched == true){
 	if(keyboard_check(vk_up) && jetFuel > 0){
 		thrusting = true;
 		y += -3;
+		if(yvel > 1){
+			yvel -= .1;
+		}
 		x += xvel;
 		jetFuel -= 1;
 	}
