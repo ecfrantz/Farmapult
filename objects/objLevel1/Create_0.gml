@@ -43,7 +43,7 @@ else{
 	object = objPig;
 }
 
-instance_create_layer(96,544,room0,object);
+instance_create_layer(96,544,level1,object);
 
 num_slotsx = 3;
 num_slotsy = 1;

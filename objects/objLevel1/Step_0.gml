@@ -34,7 +34,7 @@ for(var i=0;i<num_slotsx;i++){
 					object = objPig;
 				}
 				// create new object onclick
-				instance_create_layer(96,544,room0,object);
+				instance_create_layer(96,544,level1,object);
 			} 
 		}
 	}
