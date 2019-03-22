@@ -17,7 +17,7 @@ if(keyboard_check(vk_up) && launched == false){
 }
 else if(!keyboard_check(vk_up) && poweredUp == true){
 	launched = true;
-	totvel = pow/10;
+	totvel = pow/20 +2;
 	xvel = totvel*cos(image_angle*(pi/180));
 	yvel = totvel*sin(image_angle*(pi/180)+180);
 	grav = .05;
@@ -38,6 +38,7 @@ if((y > belowGround && y < ground) && yvel != 0){
 else if(y> ground){
 	yvel = 0;
 	grav = 0;
+	pow = 0;
 }
 
 if(xvel <= 0){
