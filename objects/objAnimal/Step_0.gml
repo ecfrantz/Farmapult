@@ -9,10 +9,19 @@ if(keyboard_check(vk_right) && launched ==false){
 }
 
 if(keyboard_check(vk_up) && launched == false){
+	pow += powAdd;
+	if(pow <= 0 || pow >=100){
+		powAdd = powAdd*-1;
+	}
+	poweredUp = true;
+}
+else if(!keyboard_check(vk_up) && poweredUp == true){
 	launched = true;
+	totvel = pow/10;
 	xvel = totvel*cos(image_angle*(pi/180));
 	yvel = totvel*sin(image_angle*(pi/180)+180);
 	grav = .05;
+	poweredUp = false;
 }
 
 yvel += grav;

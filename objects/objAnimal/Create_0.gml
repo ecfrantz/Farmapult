@@ -9,3 +9,6 @@ drag = .003
 ground = 550;
 belowGround = 544;
 xStart = 96;
+pow = 0;
+powAdd = 1;
+poweredUp = false
