@@ -1,8 +1,8 @@
 {
-    "id": "522d788d-af65-4827-968e-15042c974721",
+    "id": "bf680078-7d4a-4c52-8c3f-46339af306a3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objWindmill",
+    "name": "objPole",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "9243ffa7-b8a3-4c3a-8633-0dff8a4d077f",
+    "spriteId": "cddccd5d-20ce-4a20-84b8-6f7c7a7f4c03",
     "visible": true
 }
