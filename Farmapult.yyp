@@ -167,6 +167,25 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "69d44b4d-4ae0-4a9b-8125-f5374ad69ba6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "options\/linux\/options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
             "Key": "b60267a3-cabb-49c9-bcf6-0b48c49be9d4",
             "Value": {
                 "id": "6a0da26f-f8c9-4117-88c2-d62066f94c95",
@@ -315,6 +334,25 @@
             "Value": {
                 "id": "4fb48b49-0d5b-40ac-b7ed-47021a926e74",
                 "resourcePath": "sprites\/sprPig\/sprPig.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb3903fc-22af-4d02-bb08-f415e9c4ee33",
+            "Value": {
+                "id": "ee179001-d798-4e9d-9068-dc7800021fe6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spriteBarn\/spriteBarn.yy",
                 "resourceType": "GMSprite"
             }
         },
