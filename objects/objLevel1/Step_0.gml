@@ -18,9 +18,9 @@ for(var i=0;i<num_slotsx;i++){
 		// if mouse clicked
 		if(mouse_x > x1 && mouse_x < x2 && mouse_y > y1 && mouse_y < y2){
 			if(mouse_check_button(mb_left)){
-				if(object.goal == false){
-					global.inventory[equipped,j] = list[equipped];
-				}
+				//if(object.goal == false){
+				//	global.inventory[equipped,j] = list[equipped];
+				//}
 				equipped = listId[i];
 				// destroy current object
 				instance_destroy(object);
@@ -37,10 +37,11 @@ for(var i=0;i<num_slotsx;i++){
 				instance_create_layer(96,544,level1,object);
 			} 
 		}
-		
+		/*
 		if(object.goal != false){
 			instance_destroy(object);
 			equipped = listId[equipped+1];	
 		}
+		*/
 	}
 }
