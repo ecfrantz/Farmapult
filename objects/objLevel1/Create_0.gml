@@ -9,6 +9,8 @@
 //instance_create_layer(300,576,room0,objPig);
 //objPig.launched = true;
 
+audio_play_sound(backgroundMusic, 0,1)
+
 // inventory setup
 enum animalList{
 	empty = -1,
