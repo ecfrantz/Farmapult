@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2d645f76-783b-4a5d-8320-2c60d6693df5",
+            "Value": {
+                "id": "65c26459-a772-4520-8dc1-b89bab564e79",
+                "resourcePath": "sprites\\sprCannon\\sprCannon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38cdb827-6517-4ce2-a295-6e95120181f6",
             "Value": {
                 "id": "9ae31336-ba1f-4840-baa9-9dfd2c061a47",
@@ -356,6 +364,14 @@
                 "id": "424570a7-f88a-4282-992d-1b7ca4a72533",
                 "resourcePath": "sounds\\pigSqueal\\pigSqueal.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e1bf86c5-de1d-4972-8d8f-8f3abd8a4f27",
+            "Value": {
+                "id": "13c60dcc-d76e-4ac4-919b-441ca0aa6677",
+                "resourcePath": "objects\\objCannon\\objCannon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
