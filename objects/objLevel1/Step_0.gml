@@ -44,6 +44,7 @@ for(var i=0;i<num_slotsx;i++){
 			} 
 		}
 		with object{
+			image_angle = objCannon.image_angle;
 			if(place_meeting(x,y,objBarn)){
 				objLevel1.done[objLevel1.equipped] = true;
 				audio_play_sound(goalSound,10,false);
@@ -79,6 +80,7 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(done[0] && done[1] && done[2]){
+			instance_destroy(objCannon);
 			instance_deactivate_all(1);
 			audio_stop_all();
 			//room_goto(level2);

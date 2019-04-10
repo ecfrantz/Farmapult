@@ -45,10 +45,11 @@ if(xvel <= 0){
 	xvel = 0;
 }
 
-if(launched == true){
-	if(xvel == 0 && yvel == 0){
-		x = xStart;
-		y = belowGround;
-		launched = false;
-	}
+
+if(xvel == 0 && yvel == 0 && launched == true){
+	x = xStart;
+	y = belowGround;
+	objCannon.image_angle = 0;
+	launched = false;
 }
+

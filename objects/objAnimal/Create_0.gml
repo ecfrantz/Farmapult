@@ -12,3 +12,4 @@ xStart = 96;
 pow = 0;
 powAdd = 1;
 poweredUp = false
+//image_angle = objCannon.image_angle;
