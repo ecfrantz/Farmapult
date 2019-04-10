@@ -39,13 +39,13 @@ for(var i=0;i<num_slotsx;i++){
 				}
 				// create new object onclick
 				
-				instance_create_depth(96,544,level1,object);
+				instance_create_depth(96,544,level2,object);
 				test = "animals drawn"
 			} 
 		}
 		with object{
 			if(place_meeting(x,y,objBarn)){
-				objLevel1.done[objLevel1.equipped] = true;
+				objLevel2.done[objLevel2.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
 			}
@@ -74,17 +74,11 @@ for(var i=0;i<num_slotsx;i++){
 					object = objPig;
 				}
 				// create new object onclick
-				instance_create_depth(96,544,level1,object);
+				instance_create_depth(96,544,level2,object);
 		}
 		
 		if(done[0] && done[1] && done[2]){
 			instance_deactivate_all(1);
-			audio_stop_all();
-			//room_goto(level2);
-			if(keyboard_check(ord("Y"))){
-				room_goto(level2);
-			}
-			else if(keyboard_check(ord("N"))){game_end();}
 		}
 	}
 }
