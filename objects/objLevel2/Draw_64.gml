@@ -20,5 +20,5 @@ if(done[0] && done[1] && done[2]){
 	
 	draw_set_halign(fa_center);
 	draw_set_halign(fa_middle);
-	draw_text(gui_width/2, gui_height/2, "You Win!!!\nGo to next Level? \n Y/N");
+	draw_text(gui_width/2, gui_height/2, "You Win!!!");
 }

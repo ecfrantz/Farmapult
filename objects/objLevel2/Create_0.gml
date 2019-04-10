@@ -13,25 +13,28 @@
 audio_play_sound(backgroundMusic, 0,1);
 
 // inventory setup
+/*
 enum animalList{
 	empty = -1,
 	cow,
 	chicken,
 	pig
 }
+*/
 
 // id to iterate list
 listId[0] = 0;
 listId[1] = 1;
 listId[2] = 2;
 // list
-list[0] = animalList.chicken;
-list[1] = animalList.cow;
+list[0] = animalList.pig;
+list[1] = animalList.pig;
 list[2] = animalList.pig;
 // boolean id to check if done
 done[0] = false;
 done[1] = false;
 done[2] = false;
+
 
 // default equip
 equipped = listId[0];
@@ -45,7 +48,7 @@ else{
 	object = objPig;
 }
 
-instance_create_depth(96,544,level1,object);
+instance_create_depth(96,544,level2,object);
 
 num_slotsx = 3;
 num_slotsy = 1;
