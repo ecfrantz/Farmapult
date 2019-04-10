@@ -223,11 +223,27 @@
             }
         },
         {
+            "Key": "9e07b3f2-638e-4568-bc28-659eba546bf3",
+            "Value": {
+                "id": "b0f7d50b-6e2f-4c88-a857-ad0bd942e54e",
+                "resourcePath": "sounds\\goalSound\\goalSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a6f21c8c-5c75-44e6-af30-8bf255c1d276",
             "Value": {
                 "id": "a67a63f7-fe51-46e8-a064-9e0e0e64a181",
                 "resourcePath": "objects\/objPig\/objPig.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a7240ac9-584c-4e8b-9b7d-39291f460efb",
+            "Value": {
+                "id": "59d34abb-c1d5-4f1f-856c-8b11a96da192",
+                "resourcePath": "fonts\\defaultfont\\defaultfont.yy",
+                "resourceType": "GMFont"
             }
         },
         {

@@ -21,6 +21,9 @@ for(var i=0;i<num_slotsx;i++){
 				//if(object.goal == false){
 				//	global.inventory[equipped,j] = list[equipped];
 				//}
+				if(done[equipped] == false){
+					global.inventory[equipped,j] = list[equipped];
+				}
 				equipped = listId[i];
 				// destroy current object
 				instance_destroy(object);
@@ -37,11 +40,42 @@ for(var i=0;i<num_slotsx;i++){
 				instance_create_layer(96,544,level1,object);
 			} 
 		}
-		/*
-		if(object.goal != false){
-			instance_destroy(object);
-			equipped = listId[equipped+1];	
+		with object{
+			if(place_meeting(x,y,objBarn)){
+				objLevel1.done[objLevel1.equipped] = true;
+				audio_play_sound(goalSound,10,false);
+				instance_destroy();
+			}
 		}
-		*/
+		
+		if(done[equipped] == true){
+			for(var temp=0;temp<3;temp++){
+				if (done[temp] == false){
+					equipped = temp;
+					break;
+				}
+			}
+			if(done[equipped] == false){
+					global.inventory[equipped,j] = list[equipped];
+				}
+				equipped = listId[i];
+				// destroy current object
+				instance_destroy(object);
+				if(list[equipped] == animalList.cow){
+					object = objCow;
+				}
+				else if(list[equipped] == animalList.chicken){
+					object = objChicken;
+				}
+				else{
+					object = objPig;
+				}
+				// create new object onclick
+				instance_create_layer(96,544,level1,object);
+		}
+		
+		if(done[0] && done[1] && done[2]){
+			instance_deactivate_all(1);
+		}
 	}
 }

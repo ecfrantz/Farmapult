@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-goal = true;
+//audio_play_sound(goalSound,10,false);
