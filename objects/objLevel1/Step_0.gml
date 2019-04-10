@@ -40,7 +40,7 @@ for(var i=0;i<num_slotsx;i++){
 				// create new object onclick
 				
 				instance_create_depth(96,544,level1,object);
-				test = "animals drawn"
+				//test = "animals drawn"
 			} 
 		}
 		with object{
@@ -48,6 +48,7 @@ for(var i=0;i<num_slotsx;i++){
 				objLevel1.done[objLevel1.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
+				objCannon.image_angle = 0;
 			}
 		}
 		
