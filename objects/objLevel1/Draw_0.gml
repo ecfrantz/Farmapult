@@ -1,6 +1,7 @@
 /// @draws inventory
 // You can write your code in this editor
 // inventory slot size
+//draw_text(100,100, test);
 var slot_sizex = 64;
 var slot_sizey = 64;
 

@@ -9,6 +9,7 @@
 //instance_create_layer(300,576,room0,objPig);
 //objPig.launched = true;
 
+//test = "testing";
 audio_play_sound(backgroundMusic, 0,1);
 
 // inventory setup
@@ -45,7 +46,7 @@ else{
 	object = objPig;
 }
 
-instance_create_layer(96,544,level1,object);
+instance_create_depth(96,544,level1,object);
 
 num_slotsx = 3;
 num_slotsy = 1;

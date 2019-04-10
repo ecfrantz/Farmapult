@@ -21,6 +21,7 @@ for(var i=0;i<num_slotsx;i++){
 				//if(object.goal == false){
 				//	global.inventory[equipped,j] = list[equipped];
 				//}
+				draw_text(100,100, "Drawing animals");
 				if(done[equipped] == false){
 					global.inventory[equipped,j] = list[equipped];
 				}
@@ -37,7 +38,9 @@ for(var i=0;i<num_slotsx;i++){
 					object = objPig;
 				}
 				// create new object onclick
-				instance_create_layer(96,544,level1,object);
+				
+				instance_create_depth(96,544,level1,object);
+				test = "animals drawn"
 			} 
 		}
 		with object{
