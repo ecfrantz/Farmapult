@@ -58,3 +58,6 @@ for(var i = 0; i < num_slotsx; i++){
 		global.inventory[i,j] = list[i];
 	}
 }
+
+global.shots= 5;
+global.finish = false;

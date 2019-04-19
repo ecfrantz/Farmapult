@@ -23,6 +23,7 @@ else if(!keyboard_check(vk_up) && poweredUp == true){
 	grav = .05;
 	poweredUp = false;
 	image_index = 1;
+	global.shots -= 1;
 }
 
 yvel += grav;
@@ -47,6 +48,10 @@ if(xvel <= 0){
 
 
 if(xvel == 0 && yvel == 0 && launched == true){
+	if(global.shots == 0){
+		show_debug_message("shot = 0");
+		global.finish = true;
+	}
 	x = xStart;
 	y = belowGround;
 	objCannon.image_angle = 0;
