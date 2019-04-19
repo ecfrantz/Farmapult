@@ -16,9 +16,11 @@ if(launched == true){
 		}
 		x += xvel;
 		jetFuel -= 1;
+		image_index = 2;
 	}
 	else if(!keyboard_check(vk_up) && thrusting == true){
 		thrusting = false;
+		image_index = 1;
 	}
 	else if(jetFuel <= 0 && thrusting == true){
 		thrusting = false;
