@@ -26,8 +26,8 @@ listId[1] = 1;
 listId[2] = 2;
 // list
 list[0] = animalList.chicken;
-list[1] = animalList.cow;
-list[2] = animalList.pig;
+list[1] = animalList.chicken;
+list[2] = animalList.chicken;
 // boolean id to check if done
 done[0] = false;
 done[1] = false;
