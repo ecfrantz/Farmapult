@@ -22,6 +22,7 @@ else if(!keyboard_check(vk_up) && poweredUp == true){
 	yvel = totvel*sin(image_angle*(pi/180)+180);
 	grav = .05;
 	poweredUp = false;
+	image_index = 1;
 }
 
 yvel += grav;
