@@ -46,6 +46,9 @@ for(var i=0;i<num_slotsx;i++){
 		with object{
 			image_angle = objCannon.image_angle;
 			if(place_meeting(x,y,objBarn)){
+				if(global.shots == 0){
+					global.finish = true;
+				}
 				objLevel1.done[objLevel1.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
@@ -77,6 +80,19 @@ for(var i=0;i<num_slotsx;i++){
 				}
 				// create new object onclick
 				instance_create_depth(96,544,level1,object);
+		}
+		
+		if(global.finish){
+			show_debug_message("lvl 1 step debug");
+			instance_destroy(objCannon);
+			instance_deactivate_all(1);
+			audio_stop_all();
+			if(keyboard_check(ord("Y"))){
+				room_restart();
+			}
+			else if(keyboard_check(ord("N"))){
+				game_end();
+			}
 		}
 		
 		if(done[0] && done[1] && done[2]){
