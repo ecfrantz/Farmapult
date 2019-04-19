@@ -913,6 +913,25 @@
             }
         },
         {
+            "Key": "d28788e1-5125-4675-986a-329d2d9c671f",
+            "Value": {
+                "id": "e6ee2ca8-5d0a-4406-8c9d-c297ce64d007",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprTractor2\/sprTractor2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d904f9be-5da9-4c11-b3f4-96f5e93df7d0",
             "Value": {
                 "id": "cae45b4e-7e5c-4bf2-acc1-144232dac90e",
