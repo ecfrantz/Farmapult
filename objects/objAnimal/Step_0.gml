@@ -39,7 +39,6 @@ if((y > belowGround && y < ground) && yvel != 0){
 else if(y> ground){
 	yvel = 0;
 	grav = 0;
-	pow = 0;
 }
 
 if(xvel <= 0){
@@ -52,5 +51,6 @@ if(xvel == 0 && yvel == 0 && launched == true){
 	y = belowGround;
 	objCannon.image_angle = 0;
 	launched = false;
+	pow = 0;
 }
 
