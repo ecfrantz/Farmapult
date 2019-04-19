@@ -14,6 +14,7 @@ if(keyboard_check(vk_up) && launched == false){
 		powAdd = powAdd*-1;
 	}
 	poweredUp = true;
+	
 }
 else if(!keyboard_check(vk_up) && poweredUp == true){
 	launched = true;
@@ -24,8 +25,16 @@ else if(!keyboard_check(vk_up) && poweredUp == true){
 	poweredUp = false;
 	image_index = 1;
 	global.shots -= 1;
+	with objSlingshot{
+		image_speed = 0.5;
+	}
 }
-
+	with objSlingshot{
+		if(image_index == 2){
+			image_index = 0;
+			image_speed = 0;
+		}
+	}
 yvel += grav;
 xvel -= drag;
 
