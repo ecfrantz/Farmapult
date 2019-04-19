@@ -30,7 +30,7 @@ else if(!keyboard_check(vk_up) && poweredUp == true){
 	}
 }
 	with objSlingshot{
-		if(image_index == 2){
+		if(image_index == 3){
 			image_index = 0;
 			image_speed = 0;
 		}

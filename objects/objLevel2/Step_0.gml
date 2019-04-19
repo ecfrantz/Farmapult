@@ -48,7 +48,26 @@ for(var i=0;i<num_slotsx;i++){
 				objLevel2.done[objLevel2.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
+				
 			}
+			if(place_meeting(x,y,objTractor)){
+				objLevel2.hitTractor[objLevel2.equipped] = true;
+				instance_destroy();
+				instance_create_depth(x,y,level2, objExplosion);
+
+			}
+		}	
+		if(done[equipped] == false && hitTractor[equipped] == true){
+			show_debug_message("hit truck");
+			hitTractor[equipped] = false;
+			alarmval = false;
+			alarm[2] = 3;
+		}
+		if(alarmval == true){
+			show_debug_message("creating new object");
+			instance_create_depth(96,544,level2,object);
+			alarmval = false;
+			hitTractor[equipped] = false;
 		}
 		
 		if(done[equipped] == true){

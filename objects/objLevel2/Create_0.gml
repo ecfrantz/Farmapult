@@ -34,6 +34,10 @@ list[2] = animalList.pig;
 done[0] = false;
 done[1] = false;
 done[2] = false;
+// more boolean
+hitTractor[0] = false;
+hitTractor[1] = false;
+hitTractor[2] = false;
 
 
 // default equip
@@ -61,3 +65,5 @@ for(var i = 0; i < num_slotsx; i++){
 		global.inventory[i,j] = list[i];
 	}
 }
+
+alarmval = false;
