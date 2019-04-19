@@ -2,7 +2,7 @@
 // You can write your code in this editor
 xvel = 0;
 yvel = 0;
-totvel = 2;
+totvel = 0;
 grav = 0;
 launched = false;
 drag = .003
@@ -12,5 +12,6 @@ xStart = 96;
 pow = 0;
 powAdd = 1;
 poweredUp = false
+initvel = 3;
 image_speed = 0;
 //image_angle = objCannon.image_angle;
