@@ -514,6 +514,25 @@
             }
         },
         {
+            "Key": "903995c3-53cc-4dd7-8cd9-2ac87d9909de",
+            "Value": {
+                "id": "ca926391-dfce-43e6-b107-4253e79df93b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objSlingshot\/objSlingshot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "90ec1639-b5af-4add-a576-1230dcfc6885",
             "Value": {
                 "id": "bcbc24ad-9f8a-480e-94d6-64237954d1fc",
