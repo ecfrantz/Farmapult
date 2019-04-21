@@ -8,6 +8,8 @@
 //objCow.launched = true;
 //instance_create_layer(300,576,room0,objPig);
 //objPig.launched = true;
+global.lvl1 = false;
+global.lvl2 = true;
 
 //test = "testing";
 audio_play_sound(backgroundMusic, 0,1);
@@ -34,6 +36,10 @@ list[2] = animalList.pig;
 done[0] = false;
 done[1] = false;
 done[2] = false;
+// more boolean
+hitTractor[0] = false;
+hitTractor[1] = false;
+hitTractor[2] = false;
 
 
 // default equip
@@ -61,3 +67,5 @@ for(var i = 0; i < num_slotsx; i++){
 		global.inventory[i,j] = list[i];
 	}
 }
+
+alarmval = false;

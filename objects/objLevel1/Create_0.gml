@@ -9,6 +9,9 @@
 //instance_create_layer(300,576,room0,objPig);
 //objPig.launched = true;
 
+global.lvl1 = true;
+global.lvl2 = false;
+
 //test = "testing";
 audio_play_sound(backgroundMusic, 0,1);
 
@@ -26,8 +29,8 @@ listId[1] = 1;
 listId[2] = 2;
 // list
 list[0] = animalList.chicken;
-list[1] = animalList.cow;
-list[2] = animalList.pig;
+list[1] = animalList.chicken;
+list[2] = animalList.chicken;
 // boolean id to check if done
 done[0] = false;
 done[1] = false;
@@ -58,3 +61,6 @@ for(var i = 0; i < num_slotsx; i++){
 		global.inventory[i,j] = list[i];
 	}
 }
+
+global.shots= 5;
+global.finish = false;
