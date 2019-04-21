@@ -8,6 +8,8 @@
 //objCow.launched = true;
 //instance_create_layer(300,576,room0,objPig);
 //objPig.launched = true;
+global.lvl1 = false;
+global.lvl2 = true;
 
 //test = "testing";
 audio_play_sound(backgroundMusic, 0,1);

@@ -83,6 +83,7 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(global.finish){
+			global.lvl1 = false;
 			show_debug_message("lvl 1 step debug");
 			instance_destroy(objCannon);
 			instance_deactivate_all(1);

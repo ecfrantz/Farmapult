@@ -63,7 +63,11 @@ if(xvel == 0 && yvel == 0 && launched == true){
 	}
 	x = xStart;
 	y = belowGround;
-	objCannon.image_angle = 0;
+	if(global.lvl1 == true){
+		objCannon.image_angle = 0;
+	} else if(global.lvl2 == true){
+		objSlingshot.image_angle = 0;
+	}
 	launched = false;
 	pow = 0;
 }
