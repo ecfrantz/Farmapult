@@ -98,7 +98,9 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(done[0] && done[1] && done[2]){
+			audio_stop_all();
 			instance_deactivate_all(1);
+			
 		}
 	}
 }
