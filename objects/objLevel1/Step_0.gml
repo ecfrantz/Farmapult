@@ -83,6 +83,7 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(global.finish){
+			audio_play_sound(Fail,10,false);
 			global.lvl1 = false;
 			show_debug_message("lvl 1 step debug");
 			instance_destroy(objCannon);
