@@ -127,11 +127,27 @@
             }
         },
         {
+            "Key": "2e2f0cee-c6d7-46f4-b15b-d761143b2463",
+            "Value": {
+                "id": "8d09be18-2170-4168-8b25-18dd424c09c9",
+                "resourcePath": "sprites\\sprControls\\sprControls.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38cdb827-6517-4ce2-a295-6e95120181f6",
             "Value": {
                 "id": "9ae31336-ba1f-4840-baa9-9dfd2c061a47",
                 "resourcePath": "views\/38cdb827-6517-4ce2-a295-6e95120181f6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "39a21b2a-47d9-4a61-8060-7d5ed3a24647",
+            "Value": {
+                "id": "fa5bdec7-78b4-48c8-9ce9-9e2e6ab6d12e",
+                "resourcePath": "rooms\\Controls\\Controls.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -215,11 +231,27 @@
             }
         },
         {
+            "Key": "6d9761b1-724a-4b0d-a289-f642a689f58f",
+            "Value": {
+                "id": "a28bb495-21c7-483e-8b4a-fabeb0ee9a15",
+                "resourcePath": "objects\\objControls\\objControls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6da3f759-7a43-416c-bd3f-e21943a149fb",
             "Value": {
                 "id": "e01bc612-3716-48c5-bbe9-404e18116682",
                 "resourcePath": "views\/6da3f759-7a43-416c-bd3f-e21943a149fb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "76b95214-3ab8-40d6-b894-af18111607ac",
+            "Value": {
+                "id": "426718b3-266d-4eb2-8fc7-39a6537ce280",
+                "resourcePath": "objects\\objVolume\\objVolume.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -244,6 +276,14 @@
                 "id": "d3a71a46-86ef-4352-86f5-55141ba10910",
                 "resourcePath": "views\/891fee86-1c3b-4c4f-8e12-73f77f5ecbf4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8959ca00-8c65-4180-a111-43003a897d08",
+            "Value": {
+                "id": "c63732d3-fb80-4d9e-a154-b103cb5b78d5",
+                "resourcePath": "rooms\\settings\\settings.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

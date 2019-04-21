@@ -56,7 +56,7 @@ if(xvel <= 0){
 }
 
 
-if(xvel == 0 && yvel == 0 && launched == true){
+if(((xvel == 0 && yvel == 0) || x> 2500) && launched == true){
 	if(global.shots == 0){
 		show_debug_message("shot = 0");
 		global.finish = true;

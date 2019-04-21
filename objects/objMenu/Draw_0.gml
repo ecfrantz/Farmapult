@@ -9,7 +9,7 @@ draw_set_color(c_white);
 
 var m
 for(m = 0; m < array_length_1d(menu); m++){
-	draw_text_transformed(x + space, y + (m*space), string(menu[m]),2,2,0)
+	draw_text_transformed(x + space, y + (m*space), string(menu[m]),1,1,0)
 	
 }
 

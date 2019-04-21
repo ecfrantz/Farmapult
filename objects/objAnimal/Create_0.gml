@@ -13,7 +13,7 @@ pow = 0;
 powAdd = 1;
 poweredUp = false
 
-velinit = 3;
+velinit = 2;
 
 
 
