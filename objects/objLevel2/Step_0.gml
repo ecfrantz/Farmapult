@@ -98,7 +98,14 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(done[0] && done[1] && done[2]){
+			//instance_deactivate_all(1);
+			instance_destroy(objCannon);
 			instance_deactivate_all(1);
+			audio_stop_all();
+			if(keyboard_check(ord("Y"))){
+				room_goto(level3);
+			}
+			else if(keyboard_check(ord("N"))){game_end();}
 		}
 	}
 }

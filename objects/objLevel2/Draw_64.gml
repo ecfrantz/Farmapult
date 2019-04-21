@@ -20,5 +20,20 @@ if(done[0] && done[1] && done[2]){
 	
 	draw_set_halign(fa_center);
 	draw_set_halign(fa_middle);
-	draw_text(gui_width/2, gui_height/2, "You Win!!!");
+	draw_text(gui_width/2, gui_height/2, "You Win!!!\nGo to next Level? \n Y/N");
+}
+
+if(global.finish){
+	draw_set_color(c_black);
+	draw_set_alpha(0.60);
+	
+	display_set_gui_size(1920,1080);
+	
+	draw_rectangle(0, 0, gui_width,	gui_height, false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	
+	draw_set_halign(fa_center);
+	draw_set_halign(fa_middle);
+	draw_text(gui_width/2, gui_height/2, "You Lose :(\nDo you want to restart?\nY/N");
 }
