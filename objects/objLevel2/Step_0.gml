@@ -59,6 +59,7 @@ for(var i=0;i<num_slotsx;i++){
 		}	
 		if(done[equipped] == false && hitTractor[equipped] == true){
 			show_debug_message("hit truck");
+			instance_destroy(objTractor);
 			hitTractor[equipped] = false;
 			alarmval = false;
 			alarm[2] = 3;
