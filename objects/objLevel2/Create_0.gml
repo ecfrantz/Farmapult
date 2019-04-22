@@ -69,3 +69,5 @@ for(var i = 0; i < num_slotsx; i++){
 }
 
 alarmval = false;
+global.shots= 5;
+global.finish = false;

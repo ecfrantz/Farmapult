@@ -45,6 +45,9 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		with object{
 			if(place_meeting(x,y,objBarn)){
+				if(global.shots == 0){
+					global.finish = true;
+				}
 				objLevel2.done[objLevel2.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
@@ -97,9 +100,24 @@ for(var i=0;i<num_slotsx;i++){
 				instance_create_depth(96,544,level2,object);
 		}
 		
+		if(global.finish){
+			audio_play_sound(Fail,10,false);
+			global.lvl2 = false;
+			show_debug_message("lvl 2 step debug");
+			instance_destroy(objSlingshot);
+			instance_deactivate_all(1);
+			audio_stop_all();
+			if(keyboard_check(ord("Y"))){
+				room_restart();
+			}
+			else if(keyboard_check(ord("N"))){
+				game_end();
+			}
+		}
+		
 		if(done[0] && done[1] && done[2]){
 			//instance_deactivate_all(1);
-			instance_destroy(objCannon);
+			instance_destroy(objSlingshot);
 			instance_deactivate_all(1);
 			audio_stop_all();
 			if(keyboard_check(ord("Y"))){
