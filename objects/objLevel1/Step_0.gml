@@ -83,7 +83,7 @@ for(var i=0;i<num_slotsx;i++){
 		}
 		
 		if(global.finish){
-			audio_play_sound(Fail,10,false);
+			audio_play_sound(Fail,10,false); //doesn't work?
 			global.lvl1 = false;
 			show_debug_message("lvl 1 step debug");
 			instance_destroy(objCannon);
@@ -101,7 +101,6 @@ for(var i=0;i<num_slotsx;i++){
 			instance_destroy(objCannon);
 			instance_deactivate_all(1);
 			audio_stop_all();
-			//room_goto(level2);
 			if(keyboard_check(ord("Y"))){
 				room_goto(level2);
 			}
