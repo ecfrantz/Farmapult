@@ -44,6 +44,7 @@ for(var i=0;i<num_slotsx;i++){
 			} 
 		}
 		with object{
+			image_angle = objSlingshot.image_angle;
 			if(place_meeting(x,y,objBarn)){
 				if(global.shots == 0){
 					global.finish = true;
@@ -51,7 +52,10 @@ for(var i=0;i<num_slotsx;i++){
 				objLevel3.done[objLevel3.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
-				
+				objSlingshot.image_angle = 0;
+				if(objLevel3.done[0] && objLevel3.done[1] && objLevel3.done[2] && global.finish){
+					global.finish = false;
+				}
 			}
 			if(place_meeting(x,y,objTractor)){
 				objLevel3.hitTractor[objLevel3.equipped] = true;
