@@ -53,6 +53,9 @@ for(var i=0;i<num_slotsx;i++){
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
 				objCannon.image_angle = 0;
+				if(objLevel1.done[0] && objLevel1.done[1] && objLevel1.done[2] && global.finish){
+						global.finish = false;
+				}
 			}
 		}
 		
@@ -87,7 +90,7 @@ for(var i=0;i<num_slotsx;i++){
 			global.lvl1 = false;
 			show_debug_message("lvl 1 step debug");
 			instance_destroy(objCannon);
-			instance_deactivate_all(1);
+			//instance_deactivate_all(1);
 			audio_stop_all();
 			if(keyboard_check(ord("Y"))){
 				room_restart();

@@ -44,11 +44,18 @@ for(var i=0;i<num_slotsx;i++){
 			} 
 		}
 		with object{
+			image_angle = objSlingshot.image_angle;
 			if(place_meeting(x,y,objBarn)){
+				if(global.shots == 0){
+					global.finish = true;
+				}
 				objLevel3.done[objLevel3.equipped] = true;
 				audio_play_sound(goalSound,10,false);
 				instance_destroy();
-				
+				objSlingshot.image_angle = 0;
+				if(objLevel3.done[0] && objLevel3.done[1] && objLevel3.done[2] && global.finish){
+					global.finish = false;
+				}
 			}
 			if(place_meeting(x,y,objTractor)){
 				objLevel3.hitTractor[objLevel3.equipped] = true;
@@ -95,6 +102,21 @@ for(var i=0;i<num_slotsx;i++){
 				}
 				// create new object onclick
 				instance_create_depth(96,544,level3,object);
+		}
+		
+		if(global.finish){
+			audio_play_sound(Fail,10,false);
+			global.lvl2 = false;
+			show_debug_message("lvl 3 step debug");
+			instance_destroy(objSlingshot);
+			instance_deactivate_all(1);
+			audio_stop_all();
+			if(keyboard_check(ord("Y"))){
+				room_restart();
+			}
+			else if(keyboard_check(ord("N"))){
+				game_end();
+			}
 		}
 		
 		if(done[0] && done[1] && done[2]){

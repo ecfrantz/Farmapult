@@ -69,5 +69,6 @@ for(var i = 0; i < num_slotsx; i++){
 }
 
 alarmval = false;
-
+global.shots= 5;
+global.finish = false;
 show_debug_message("level3 created");
