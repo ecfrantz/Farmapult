@@ -13,6 +13,7 @@ global.lvl1 = true;
 global.lvl2 = false;
 
 //test = "testing";
+audio_master_gain(global.vol/100)
 audio_play_sound(backgroundMusic, 0,1);
 
 // inventory setup

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.vol = 100;
 menu[0] = "Play!"
 menu[1] = "Settings"
 menu[2] = "Controls"

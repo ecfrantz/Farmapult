@@ -61,11 +61,13 @@ if(((xvel == 0 && yvel == 0) || x> 2500) && launched == true){
 		show_debug_message("shot = 0");
 		global.finish = true;
 	}
+	xvel = 0;
+	yvel = 0;
 	x = xStart;
 	y = belowGround;
 	if(global.lvl1 == true){
 		objCannon.image_angle = 0;
-	} else if(global.lvl2 == true){
+	} else if(global.lvl2 == true|| global.lv3 ==true){
 		objSlingshot.image_angle = 0;
 	}
 	launched = false;

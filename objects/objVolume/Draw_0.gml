@@ -7,4 +7,4 @@ draw_set_valign(fa_middle);
 
 draw_set_color(c_white);
 draw_text_transformed(x-70,y, "Volume:" , 2,2,0);
-draw_healthbar(x+10,y-5,x+100,y+10,vol,c_black,c_blue,c_blue,0,true,true);
+draw_healthbar(x+10,y-5,x+100,y+10,global.vol,c_black,c_blue,c_blue,0,true,true);
